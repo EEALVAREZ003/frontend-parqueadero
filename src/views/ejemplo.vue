@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-<h1>esta es la carpeta de paises</h1>
+<h1>esta es la carpeta de cargos</h1>
   </template>
 
 <style scoped>

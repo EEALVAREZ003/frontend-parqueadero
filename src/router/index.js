@@ -12,7 +12,7 @@ const routes= [
     {
         path:'/paises',
         name: 'Paises',
-        component: ejemplo,
+        component: paises,
     }
 ]
 

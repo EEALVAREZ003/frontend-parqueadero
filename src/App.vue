@@ -1,6 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import Cargos from './components/Cargos.vue'
+
 </script>
 
 <template>

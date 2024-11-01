@@ -1,23 +1,37 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import ejemplo from '../views/ejemplo.vue'
 import paises from '../views/paises.vue'
+import LayoutMain from '../components/LayoutMain.vue'
+import Login from '../components/Login.vue'
 
-const routes= [
+
+const routes = [
+    {
+        path: '/',
+        name: 'home',
+        component: LayoutMain,
+    },
 
     {
-        path:'/cargos',
-        name: 'Cargos',
+        path: '/login',
+        name: 'Login',
+        component: Login,
+    },
+
+    {
+        path: '/ejemplo',
+        name: 'ejemplo',
         component: ejemplo,
     },
     {
-        path:'/paises',
+        path: '/paises',
         name: 'Paises',
         component: paises,
     }
 ]
 
-const router= createRouter({
-    history:createWebHistory(),
+const router = createRouter({
+    history: createWebHistory(),
     routes,
 })
 

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-<h1>Dirección Policial</h1>
+<h1>layout</h1>
   </template>
 
 <style scoped>

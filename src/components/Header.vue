@@ -1,8 +1,12 @@
 <template>
 
 <div class="container">
+
+    <div class="container_header">
     <h2>Modulo de {{titulo}}</h2>
-    <el-button type="primary">Nuevo</el-button>
+    <el-button type="primary">{{tituloBoton}}</el-button>
+
+</div>
 </div>
 
 </template>
@@ -11,11 +15,23 @@
 
 // in <script setup>
 defineProps({
-  titulo: String
+  titulo: String,
+  tituloBoton: String,
 })
 
 </script>
 
 <style scoped>
+
+.container{
+    margin-bottom: 10px;
+}
+
+.container_header{
+
+    display: flex;
+    justify-content: space-between
+
+}
 
 </style>

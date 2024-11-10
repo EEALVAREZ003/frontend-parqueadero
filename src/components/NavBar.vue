@@ -10,14 +10,16 @@
   >
     <el-menu-item index="0">
       <img
-        style="width: 100px"
+        style="width: 200px"
         
-        alt="PARKING"
+        alt="APP-PARKINGRACO"
       />
     </el-menu-item>
     
     <el-sub-menu index="1">
-      <template #title>Edisson Alvarez</template>
+      <template #title>Edisson Alvarez
+    
+    </template>
       <el-menu-item index="1-1">Pefil</el-menu-item>
       <el-menu-item index="1-2">Cerrar Sesión</el-menu-item>
       
@@ -43,6 +45,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
   top: 0;
   width: 100%;
   z-index: 10;
+  justify-content: space-between;
 }
 
 </style>

@@ -5,6 +5,7 @@
   <template #slotLayout>
     <Header
     :titulo="'Paises ejemplo'"
+    :tituloBoton="'crear pais'"
     >
       
     </Header>

@@ -4,8 +4,13 @@
       
       <el-menu
         default-active="1"
-        class="el-menu-vertical-demo">
-
+        
+        class="el-menu-vertical-demo"
+        background-color="#26b6d3"
+        text-color="#010c0e"
+        collapse-transition
+    >
+  
         <el-sub-menu index="1">
           <template #title>
             <el-icon><location /></el-icon>

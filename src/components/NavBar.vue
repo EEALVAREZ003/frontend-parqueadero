@@ -1,6 +1,8 @@
 <template>
   <el-menu
     :default-active="activeIndex"
+    background-color="#26b6d3"
+    text-color="#010c0e"
     class="el-menu-demo"
     mode="horizontal"
     :ellipsis="false"
@@ -10,7 +12,7 @@
       <img
         style="width: 100px"
         
-        alt="Element logo"
+        alt="PARKING"
       />
     </el-menu-item>
     
@@ -40,7 +42,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
   position:relative;
   top: 0;
   width: 100%;
-  z-idex: 10;
+  z-index: 10;
 }
 
 </style>

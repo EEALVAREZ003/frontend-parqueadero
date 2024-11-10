@@ -4,24 +4,31 @@ import SideBarMenu from "./SideBarMenu.vue"
 
 </script>
 
-
-
 <template>
-<el-container>
+
+    <div>
+
+
+    </div>
+<el-container style="height: 100vh">
 
 <el-header>
-<NavBar/>
+<NavBar />
 </el-header>
 
 <el-container>
 
-<el-aside>
-<SideBarMenu/>
+<el-aside width="400px">
+<SideBarMenu />
 
 </el-aside>
 
 <el-main>
-main
+<slot name="slotLayout">
+
+    hola
+</slot>
+
 </el-main>
 
 </el-container>

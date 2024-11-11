@@ -17,7 +17,7 @@
     
     <script setup>
     
-    import LayoutMain from '../components/LayoutMain.vue';
-    import Header from '../components/Header.vue';
+    import LayoutMain from '../../components/LayoutMain.vue';
+    import Header from '../../components/Header.vue';
     
     </script>

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import ejemplo from '../views/ejemplo.vue'
-import paises from '../views/paises.vue'
-import cargos from '../views/cargos.vue'
+import paises from '../views/Paises/paises.vue'
+import cargos from '../views/Cargos/cargos.vue'
 import LayoutMain from '../components/LayoutMain.vue'
 import Login from '../components/Login.vue'
 

@@ -3,9 +3,10 @@
 <div class="container">
 
     <div class="container_header">
-    <h2>Modulo de {{titulo}}</h2>
+    <h2 class="titulo">Modulo de {{titulo}}</h2>
+    <el-row justify="center" align="middle">
     <el-button type="primary">{{tituloBoton}}</el-button>
-
+    </el-row>
 </div>
 </div>
 

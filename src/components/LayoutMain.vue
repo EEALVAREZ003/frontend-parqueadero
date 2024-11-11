@@ -10,7 +10,7 @@ import SideBarMenu from "./SideBarMenu.vue"
 
 
     </div>
-<el-container style="height: 100vh">
+<el-container style="height: 100vh;">
 
 <el-header>
 <NavBar />
@@ -24,13 +24,8 @@ import SideBarMenu from "./SideBarMenu.vue"
 </el-aside>
 
 <el-main>
-<slot name="slotLayout">
-
-    hola
-</slot>
-
+<slot name="slotLayout"> </slot>
 </el-main>
-
 </el-container>
 
 

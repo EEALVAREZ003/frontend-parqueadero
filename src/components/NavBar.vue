@@ -1,14 +1,17 @@
 <template>
   <el-menu
     :default-active="activeIndex"
-    background-color="#26b6d3"
-    text-color="#010c0e"
+    background-color="#27484f"
+        text-color="#ffffff"
     class="el-menu-demo"
     mode="horizontal"
     :ellipsis="false"
     @select="handleSelect"
   >
-    <el-menu-item index="0">
+    <el-menu-item 
+    ext-color="#010c0e"
+     class="el-menu-demo1"
+    index="0" >
       <img
         style="width: 200px"
         

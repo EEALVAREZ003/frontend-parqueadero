@@ -6,13 +6,12 @@
     <Header
     :titulo="'Paises ejemplo'"
     :tituloBoton="'crear pais'"
+    :abrir="abrirFormulario"
     >
     </Header>
 <!--componente-->
 
-    <Formulario
-    :titulo="'titulo para el formulario'"
-    >
+    <Formulario :titulo="'titulo para el formulario'" v-model:mostrar="mostrarFormulario">
       <template #slotFormulario>
 <FormPaises
 
@@ -49,6 +48,14 @@ import {Delete,Edit} from '@element-plus/icons-Vue';
 import Formulario from '../../components/Formulario.vue';
 import FormPaises from './components/formPaises.vue';
 import type { ComponentSize, FormInstance, FormRules } from 'element-plus'
+
+const mostrarFormulario = ref(false)
+
+//esta es otra manera para hacer una funcion aparte del function
+const abrirFormulario =()=>{
+mostrarFormulario.value=true
+} 
+console.log(mostrarFormulario)
 
 
 const tableData = [

@@ -5,7 +5,7 @@
     <div class="container_header">
     <h2 class="titulo">Modulo de {{titulo}}</h2>
     <el-row justify="center" align="middle">
-    <el-button type="primary" @click="">{{tituloBoton}}</el-button>
+    <el-button type="primary" @click="abrir">{{tituloBoton}}</el-button>
     </el-row>
 </div>
 </div>
@@ -18,6 +18,9 @@
 defineProps({
   titulo: String,
   tituloBoton: String,
+  abrir:{
+    type:Function
+ }
 })
 
 </script>

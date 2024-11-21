@@ -6,18 +6,20 @@
     <Header
     :titulo="'Paises ejemplo'"
     :tituloBoton="'crear pais'"
-    :abrir="abrirFormulario"
-    >
-    </Header>
-<!--componente-->
+    :abrir= "abrirFormulario"
+    />
+   <!--componente-->
 
-    <Formulario :titulo="'titulo para el formulario'" v-model:mostrar="mostrarFormulario">
+    <Formulario :titulo="'titulo para el formulario'" v-model:is-Open="mostrarFormulario">
       <template #slotFormulario>
-<FormPaises
 
->
+        <el-row :gutter="20">
+          <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
+            <FormPaises v-model:is-open="mostrarFormulario"/>
+          </el-col>
 
-</FormPaises>
+        </el-row>
+
       </template>
     </Formulario>
 
@@ -51,11 +53,13 @@ import type { ComponentSize, FormInstance, FormRules } from 'element-plus'
 
 const mostrarFormulario = ref(false)
 
+
 //esta es otra manera para hacer una funcion aparte del function
 const abrirFormulario =()=>{
 mostrarFormulario.value=true
+
 } 
-console.log(mostrarFormulario)
+
 
 
 const tableData = [

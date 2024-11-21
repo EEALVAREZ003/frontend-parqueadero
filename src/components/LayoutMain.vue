@@ -6,10 +6,6 @@ import SideBarMenu from "./SideBarMenu.vue"
 
 <template>
 
-    <div>
-
-
-    </div>
 <el-container style="height: 100vh;">
 
 <el-header>
@@ -18,12 +14,12 @@ import SideBarMenu from "./SideBarMenu.vue"
 
 <el-container>
 
-<el-aside width="400px">
+<el-aside width="250px">
 <SideBarMenu />
 
 </el-aside>
 
-<el-main>
+<el-main class="main-content">
 <slot name="slotLayout"> </slot>
 </el-main>
 </el-container>
@@ -36,10 +32,19 @@ import SideBarMenu from "./SideBarMenu.vue"
 
 <style scoped>
 
-.el-container{
+.el-header{
 
-flex:1;
-display: flex;
+    padding:0;
+}
+
+.el-aside {
+background-color: #27484f;
 
 }
+
+.main-content{
+    position:relative;
+}
+
+
 </style>
